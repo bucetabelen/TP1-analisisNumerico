@@ -30,7 +30,7 @@ def realizarExperimento():
 def experimentos():
     
     datos = []
-    maxExperimentos = 1000 #aca tiene que haber 100000
+    maxExperimentos = 100 #aca tiene que haber 100000
     cantidadExperimentos = 0
     
     #print(type(maxExperimentos))
@@ -51,6 +51,9 @@ def histogram(datos):
     
     num_bins = 10000 #cantidad de rangos??
     plt.hist(datos, num_bins, facecolor='blue', alpha=0.5)
+    plt.title('Este es un titulo')
+    plt.xlabel('Cantidad de experimentos')
+    plt.ylabel('Frecuencia')
 
     plt.show()
 
